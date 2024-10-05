@@ -1,0 +1,5 @@
+![Static Badge](https://img.shields.io/badge/license-MIT-white?logo=%233776AB)
+![Static Badge](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
+![Grep](https://img.shields.io/badge/Grep-Used-success)
+![Gawk](https://img.shields.io/badge/Gawk-Used-success)
+![Sed](https://img.shields.io/badge/Sed-Used-success)

@@ -1,0 +1,1 @@
+grep -l "sample" file* | xargs grep -o "CSC510" | uniq -c | grep -E "\s+([3-9]|[1-9][0-9]+)\s.*" | sed -E 's/:.*//' | gawk '{ printf $1" "; system("ls -l " $2) }' | sort -k1,1nr -k6,6n | gawk '{print $10}' | sed 's/file_/filtered_/'
