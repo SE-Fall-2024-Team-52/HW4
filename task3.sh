@@ -1,1 +1,1 @@
-grep -E "^[0-9]*,[0-9]*,2,.*,.*,.*,.*,.*,.*,.*,.*,.*,S" titanic.csv | sed -E 's/^(([^,]*,){5})male/\1M/g;s/^(([^,]*,){5})female/\1F/g' | gawk -F, '$7 ~ /^[0-9].*[0-9]*$/ {sum+=$7; count++} END {print "Average age: " sum/count}'
+grep -E "^[0-9]*,[0-9]*,2,.*,.*,.*,.*,.*,.*,.*,.*,.*,S" titanic.csv | sed -E 's/^(([^,]*,){5})male/\1M/g;s/^(([^,]*,){5})female/\1F/g' | tee /dev/tty | gawk -F, '$7 ~ /^[0-9].*[0-9]*$/ {sum+=$7; count++} END {print "Average age: " sum/count}'
